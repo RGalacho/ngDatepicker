@@ -174,6 +174,7 @@ angular.module('rgalacho.translate-datepicker', ['pascalprecht.translate'])
         scope.locale = getCurrentLocale();
         moment.locale(scope.locale);
         date.locale(scope.locale);
+        selectedDate.locale(scope.locale);
         ngModel.$setViewValue(selectedDate.format(scope.format));
         scope.viewValue = selectedDate.format(scope.viewFormat);
       });
